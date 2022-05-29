@@ -1,0 +1,30 @@
+<div
+  class="container"
+  (click)="cardClick()"
+  *ngIf="data != undefined"
+  [ngClass]="{ active: isActive }"
+>
+  <h1>{{ data.RouteName }}</h1>
+  <div class="cardlist">
+    <div class="tick">
+      <img src="assets/images/Subtract.png" alt="" />
+      <p>{{ data.City }} {{ data.Town }}</p>
+    </div>
+    <div class="tick">
+      <img src="assets/images/direct.png" alt="" />
+      <p>{{ data.Direction }}</p>
+    </div>
+    <div class="tick">
+      <img src="assets/images/totallength.png" alt="" />
+      <p>{{ data.CyclingLength }} 公尺</p>
+    </div>
+  </div>
+  <p>
+    開始<span>{{ data.RoadSectionStart }}</span>
+  </p>
+  <p>
+    結束<span>{{ data.RoadSectionEnd }}</span>
+  </p>
+
+  <img class="more" src="assets/images/more.png" (click)="touchOff()" alt="" />
+</div>

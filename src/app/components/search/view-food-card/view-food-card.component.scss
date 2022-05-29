@@ -1,0 +1,62 @@
+.container {
+  padding: 1rem 0.5rem;
+  display: flex;
+  background: #f6f6f6;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 5%;
+  cursor: pointer;
+  img {
+    max-width: 35%;
+    height: 110px;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-left: 5%;
+    position: relative;
+    flex: 1;
+    h1 {
+      font-size: 20px;
+      margin: 0;
+      line-height: 125%;
+    }
+    .tick {
+      box-sizing: border-box;
+      display: flex;
+      margin: 10% 0;
+      img {
+        max-width: 16px;
+        max-height: 16px;
+      }
+      p {
+        font-size: 14px;
+        margin: 0;
+        margin-left: 5%;
+      }
+    }
+    .type {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4px 8px;
+      background: #ffffff;
+      border: 1px solid #12749d;
+      box-sizing: border-box;
+      border-radius: 4px;
+      color: #12749d;
+      max-width: 70px;
+      max-height: 25px;
+    }
+    .more {
+      display: inline-block;
+      width: 10px;
+      height: 16px;
+      position: absolute;
+      right: 5%;
+      bottom: 5%;
+      cursor: pointer;
+    }
+  }
+}

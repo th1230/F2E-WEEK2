@@ -1,0 +1,10 @@
+{
+    "/api": {
+      "target": "https://ptx.transportdata.tw",
+      "secure": false,
+      "pathRewrite": {"^/api" : "https://ptx.transportdata.tw"},
+      "changeOrigin": true
+    }
+  }
+
+  

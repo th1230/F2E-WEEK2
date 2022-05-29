@@ -1,1 +1,149 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+html,
+body {
+  width: 100%;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans TC", sans-serif;
+}
+.customPopup .leaflet-popup-content-wrapper {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+}
+.customPopup .leaflet-popup-content-wrapper .leaflet-popup-content {
+  width: auto;
+  height: auto;
+  margin: 0;
+  background-color: transparent;
+  .bikedetail {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #0e5978;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(38, 38, 38, 0.25);
+    border-radius: 8px;
+    width: 348px;
+    // height: 257px;
+    padding: 16px 12px;
+    flex: 1;
+    h1 {
+      font-size: 20px;
+      margin: 0;
+      line-height: 125%;
+      margin-bottom: 12px;
+    }
+    .tick {
+      box-sizing: border-box;
+      display: flex;
+      margin-bottom: 12px;
+
+      p {
+        font-size: 14px;
+        margin: 0;
+        margin-left: 5%;
+      }
+    }
+    .bikestate {
+      display: flex;
+      margin-bottom: 16px;
+      .type {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 4px;
+        background: #f0f9fc;
+        border: 2px solid #0a4259;
+        box-sizing: border-box;
+        border-radius: 4px;
+        color: #12749d;
+        height: 29px;
+        width: 72px;
+        font-weight: 600;
+        margin-right: 5%;
+
+        &.ban {
+          background: #f4dcdc;
+          border: 2px solid #cc1010;
+          color: #cc1010;
+        }
+
+        &.warn {
+          background: #f5e6d0;
+          border: 2px solid #eb8f05;
+          color: #eb8f05;
+        }
+
+        &.stop {
+          background: #e5e5e5;
+          border: 2px solid #7b7b7b;
+          color: #7b7b7b;
+        }
+      }
+    }
+
+    .status {
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 4px 16px;
+        height: 75px;
+        width: 45%;
+        border: 1px solid #0e5978;
+        border-radius: 4px;
+        h1 {
+          margin: 0;
+          margin-bottom: 8px;
+          margin-top: 4px;
+          color: #0e5978;
+          font-size: 16px;
+          line-height: 150%;
+        }
+        p {
+          margin: 0;
+          font-size: 28px;
+          font-weight: 700;
+          margin-bottom: 4px;
+        }
+
+        &.ban {
+          background: transparent;
+          border: 2px solid #cc1010;
+          color: #cc1010;
+          h1 {
+            color: #cc1010;
+          }
+        }
+
+        &.warn {
+          background: transparent;
+          border: 2px solid #eb8f05;
+          color: #eb8f05;
+          h1 {
+            color: #eb8f05;
+          }
+        }
+
+        &.stop {
+          background: transparent;
+          border: 2px solid #7b7b7b;
+          color: #7b7b7b;
+          h1 {
+            color: #7b7b7b;
+          }
+        }
+      }
+    }
+  }
+}

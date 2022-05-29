@@ -1,0 +1,26 @@
+<div class="container" *ngIf="data != undefined && type" (click)="cardClick()">
+  <img
+    *ngIf="!data.Picture.PictureUrl1"
+    src="assets/images/no_picture.png"
+    alt="nopic"
+  />
+  <img
+    *ngIf="data.Picture.PictureUrl1"
+    [src]="data.Picture.PictureUrl1"
+    alt="pic"
+  />
+  <div class="text">
+    <h1>{{ data.RestaurantName || data.ScenicSpotName }}</h1>
+    <div class="tick">
+      <img src="assets/images/Subtract.png" alt="sub" />
+      <p>{{ data.City }}</p>
+    </div>
+    <div class="type">{{ type == "food" ? "美食" : "景點" }}</div>
+    <img
+      class="more"
+      src="assets/images/more.png"
+      (click)="touchOff()"
+      alt=""
+    />
+  </div>
+</div>

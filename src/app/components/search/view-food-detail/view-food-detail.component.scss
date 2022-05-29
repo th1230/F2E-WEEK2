@@ -1,0 +1,59 @@
+.container {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f6;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 5%;
+  img {
+    width: 100%;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-left: 5%;
+    position: relative;
+    word-wrap: break-word;
+    flex: 1;
+    h1 {
+      font-size: 20px;
+      margin: 0;
+      line-height: 125%;
+      margin-top: 5%;
+      margin-bottom: 3%;
+    }
+    .tick {
+      box-sizing: border-box;
+      display: flex;
+      margin-bottom: 7%;
+      img {
+        max-height: 19px;
+        width: auto;
+      }
+
+      p {
+        flex: 1;
+        font-size: 14px;
+        margin: 0;
+        margin-left: 5%;
+      }
+    }
+
+    .type {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4px 8px;
+      background: #ffffff;
+      border: 1px solid #12749d;
+      box-sizing: border-box;
+      border-radius: 4px;
+      color: #12749d;
+      max-width: 70px;
+      max-height: 25px;
+      margin: 7% 0;
+    }
+  }
+}

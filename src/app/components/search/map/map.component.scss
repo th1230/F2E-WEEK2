@@ -1,0 +1,9 @@
+@import "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css";
+@import "https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css";
+#map {
+  height: calc(100vh - 80px);
+  width: calc(100vw - 398px);
+  @media screen and (max-width: 450px) {
+    width: 100vw;
+  }
+}
